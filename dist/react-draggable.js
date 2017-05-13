@@ -1516,14 +1516,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	      y = _ref.y;
 	
 	  // Replace unitless items with px
-	  return _defineProperty({}, (0, _getPrefix.browserPrefixToKey)('transform', _getPrefix2.default), 'translate(' + x + 'px,' + y + 'px)');
+	  return _defineProperty({}, (0, _getPrefix.browserPrefixToKey)('transform', _getPrefix2.default), 'translate3d(' + x + 'px,' + y + 'px, 0px)');
 	}
 	
 	function createSVGTransform(_ref3) /*: string*/ {
 	  var x = _ref3.x,
 	      y = _ref3.y;
 	
-	  return 'translate(' + x + ',' + y + ')';
+	  return 'translate3d(' + x + ',' + y + ', 0px)';
 	}
 	
 	function getTouch(e /*: MouseTouchEvent*/, identifier /*: number*/) /*: ?{clientX: number, clientY: number}*/ {
